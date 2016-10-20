@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Perl + Dancer</h1></br>
+					<p>Juan José Vargas Berrocal</p>
+					<p>Alvaro Chaverri Sanchez</p>
+				</section>
+				<section>
+					<h2>¿que significa perl?</h2>
+					<p>
+						Practical Extraction and Report Language
+					</p>
+				</section>
+				<section>
+					<h2>¿Que es Perl?</h2>
+				</section>
+				<section>
+					<p style="text-align: justify">
+						Se trata de un lenguaje de programación para extraer información de archivos de texto y
+						generar informes apartir del contenido de los ficheros.
+					</p>
+					<p style="text-align: justify">
+						Perl es un lenguaje de programación interpretado, al igual que muchos otros lenguajes de Internet
+						como Javascript o ASP. Esto quiere decir que el código de los scripts en Perl no se compila sino
+						que cada vez que se quiere ejecutar se lee el código
+						y se pone en marcha interpretando lo que hay escrito.
+					</p>
+				</section>
+				<section>
+					<img src="css/img/larry-wall-1.jpg" width="25%">
+					<p>Larry Wall(Septiembre 27, 1954)</p>
+				</section>
+				<section>
+					<h1>¿para que sirve?</h1>
+				</section>
+				<section>
+					<p style="text-align: justify">
+						Perl es un lenguaje visualizado para la manipulación de cadenas de
+						caracteres, archivos y procesos.
+					</p>
+					<p style="text-align: justify">
+						La forma del lenguaje facilita la programación rápida y sucia, el hacer un programa rápido para que funcione.
+						Esto hace también que se utilice para hacer prototipos rápidos de algún algoritmo que queremos ver funcionar antes que
+						tomarnos la molestia de programarlo en un lenguaje más eficiente, como el c++. 
+					</p>
+				</section>
+				<section>
+					<h2>
+						Ventajas
+					</h2>
+					<p style="text-align: justify">
+						- Es facil de usar(teniendo ya conocimiento sobre el lenguaje).<br>
+						- Se puede programar cualquier necesidad ya que existen llibrerias para casi cualquier cosa.<br>
+						- El tiempo de desarrollo de una aplicacion es rapido. <br>
+						- Disponible para gran cantidad de sistemas operativos.
+					</p>
+				</section>
+				<section>
+					<h2>
+						Desventajas
+					</h2>
+					<p style="text-align: justify">
+						- Dificil de aprender porque esta enfocado hacia un desarrollador que posee cierta
+						cantidad de conocimientos sobre el lenguaje y no así hacia un estudiante que
+						esta aprendiendo. <br>
+						- El lenguaje es feo, siendo esta una de las principales razones para su difícil
+						aprendizaje.
+					</p>
+				</section>
+				<section>
+					<h2>
+						versiones
+					</h2>
+					<p style="text-align: justify">
+						la versión 1.0 el 18 Diciembre de 1987 <br>
+						publicó Perl 2 en 1988 y Pearl 3 en el año 1989 <br>
+						la versión 5 apareció el 17 de octubre de 1994 <br>
+						Última versión estable	5.24.01 (09 de mayo de 2016 <br>
+						Última versión en pruebas	5.25.42 (20 de agosto de 2016)
+					</p>
+				</section>
+				<section>
+					<h1>dancer</h1>
+				</section>
+				<section>
+					<img src="css/img/alexis.jpg" width="25%">
+					<p>Alexis Sukrieh</p>
+				</section>
+				<section>
+					<h2>tipo de licencia</h2>
+					<p>GPL (GNU General Public License)</p>
+				</section>
+				<section>
+					<p style="text-align: justify">
+						Dancer es un framework web escrito en Perl, inspirado originalmente por Rubi Sinatra.
+					</p>
+				</section>
+				<section>
+					<p style="text-align: justify">
+						Dancer es muy fácil de instalar, el número de dependencias se mantiene al mínimo. <br>
+						El objetivo principal es que sea sencillo de manejar para un novato en Perl.
+						Pero también es lo suficientemente flexible que un usuario experimentado puede lograr
+						lo que se desea.
+
+					</p>
+				</section>
+				<section>
+					<h2> Algunas de sus características incluyen:</h2>
+					<p style="text-align: justify">
+						Es compatible con diferentes sistemas de serialización (JSON, XML, YAML),
+						ideal para el desarrollo de aplicaciones REST (Representational State Transfer) <br>
+					    Compatibilidad con Plack y sus muchas middleware <br>
+					    Muchos sistemas de loggers y las plantillas disponibles.
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
